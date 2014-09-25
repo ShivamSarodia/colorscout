@@ -9,6 +9,11 @@
 #main #board {
      width: 75vmin;
      height: 75vmin;
+     padding: 3vmin;
+     border-radius: 5%;
+
+     border: 0.5vmin solid rgba(0,0,0,0.02);
+     background-color: rgb(241,241,241);
 }
 
 #main .tile-base {
@@ -19,5 +24,7 @@
 #main .tile {
     width: 100%;
     height: 100%;
-    background-color: black;
+    border-radius: 10%;
+
+    border: 2px solid rgba(0,0,0,0.3);
 }

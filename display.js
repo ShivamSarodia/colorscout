@@ -51,20 +51,23 @@ Display = {
     },
     setTime: function(time) {
 	// Change the time displayed
-	console.log(time);
+	//console.log(time);
     },
     setLevel: function(level) {
 	// Set the level displayed
     },
     setBoard: function(size, diff) {
 	//Main color
-	var R = Math.floor(256*Math.random());
-	var G = Math.floor(256*Math.random());
-	var B = Math.floor(256*Math.random());
-
+	var rgb = {r: Math.floor(diff + (255-2*diff)*Math.random()),
+		   g: Math.floor(diff + (255-2*diff)*Math.random()),
+		   b: Math.floor(diff + (255-2*diff)*Math.random())};
+	
+	var sign = Math.sign(Math.random()-0.5);
+	var rgb1 = {r: rgb["r"] + sign*diff,
+		    g: rgb["g"] + sign*diff,
+		    b: rgb["b"] + sign*diff};
+	
 	//Diff color
-	var lab = Color.convert({r: R, g: G, b: B}, 'lab');
-		
 	var board = document.getElementById("board");
 	board.innerHTML = "";
 	
@@ -76,7 +79,7 @@ Display = {
 	
 	var tile = document.createElement("div");
 	tile.className = "tile";
-	tile.style.backgroundColor = "rgb("+R+","+G+","+B+")";
+	tile.style.backgroundColor = "rgb("+rgb["r"]+","+rgb["g"]+","+rgb["b"]+")";
 	
 	tilebase.appendChild(tile);
 	
@@ -87,14 +90,7 @@ Display = {
 
 	this.special = Math.floor(board.childNodes.length*Math.random());
 	board.childNodes[this.special].firstChild.addEventListener("click", Game.correct);
-	
-	var x = Math.random() * diff;
-	var y = Math.random() * diff;
-	var dR = Math.floor(Math.sign(Math.random()-0.5)*Math.min(x,y));
-	var dG = Math.floor(Math.sign(Math.random()-0.5)*Math.max(x,y));
-	var dB = Math.floor(Math.sign(Math.random()-0.5)*(diff - Math.max(x,y)));
-	console.log(dR, dG, dB);
-	board.childNodes[this.special].firstChild.style.backgroundColor = "rgb("+(R+dR)+","+(G+dG)+","+(B+dB)+")";
+	board.childNodes[this.special].firstChild.style.backgroundColor = "rgb("+rgb1["r"]+","+rgb1["g"]+","+rgb1["b"]+")";
     }
 }
 
