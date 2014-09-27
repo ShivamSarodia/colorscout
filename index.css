@@ -52,14 +52,17 @@ body {
     background-color: rgba(255,255,255,1.0);
     border-radius: 3px;
     border: 1px solid rgba(41,123,174,1);
-    padding: 30px;
-    margin: -50px 30px 30px 30px;
+    padding: 20px 30px 20px 30px;
+    margin: -50px 30px 20px 30px;
     font-size: 18pt;
     color: rgba(27, 87, 124, 1);
+ }
 
+#start-screen #infhold
+{
     display: inline-block;
     vertical-align: middle;
- }
+}
 
 #start-screen #but-holder
 {
@@ -170,7 +173,17 @@ body {
      .but {
 	font-size: 28pt;
 	padding: 16px 45px;
-    }
+     }
+
+     #start-screen #info-div {
+	 font-size: 25pt;
+	 padding: 25px 40px 25px 40px;
+	 margin: -55px 100px 25px 100px;
+     }
+
+     #start-screen #inspired {
+	 font-size: 12pt;
+     }
      
      #main #info {
 	 font-size: 35pt;
@@ -187,6 +200,17 @@ body {
 	font-size: 35pt;
 	padding: 18px 80px;
     }
+
+     #start-screen #info-div {
+	 font-size: 35pt;
+	 padding: 35px 50px 35px 50px;
+	 margin: -60px 160px 55px 160px;
+     }
+
+     #start-screen #inspired {
+	 font-size: 14pt;
+     }
+     
     
     #main #info {
 	font-size: 47pt;

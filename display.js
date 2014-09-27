@@ -38,6 +38,8 @@ Display = {
 	    document.getElementById("end-screen").className = "page invis";
 	    break;
 	case 1: //Board screen
+	    document.getElementById("level").innerHTML = "L1";
+	    document.getElementById("time").innerHTML = "1:00";
 	    document.getElementById("start-screen").className = "page invis";
 	    document.getElementById("main").className = "page"
 	    document.getElementById("end-screen").className = "page invis";
