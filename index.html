@@ -2,34 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
     <div class="page" id="start-screen">
-      <button class="but" id="start-but">Begin</button>
+      <div id="infhold-div">
+	<div class="info" id="info-div">
+	  Click the tile that's different from the rest. Do as many as you can before time runs out!
+	</div>
+      </div>
+      <div id="but-holder">
+	<button class="but" id="start-but">Play</button>
+	<div id="inspired">Inspired by http://game.ioxapp.com/color/</div>
+      </div>
     </div>
 
     <div class="page invis" id="main">
+      <div id="filler"></div>
       <div id="board">
-	<div class="tile-base">
-	  <div class="tile" style="background-color: rgb(100,100,100)"></div>
-	</div>
-	<div class="tile-base">
-	  <div class="tile" style="background-color: rgb(100,100,100)"></div>
-	</div>
-	<div class="tile-base">
-	  <div class="tile" style="background-color: rgb(100,100,100)"></div>
-	</div>
-	<div class="tile-base">
-	  <div class="tile" style="background-color: rgb(100,100,100)"></div>
-	</div>
       </div>
+      <div id="info">
+	<span id="level">1</span>
+	<span id="time">0:60</span>
     </div>
     
     <div class="page invis" id="end-screen">
     </div>
   </body>
   <script type="text/javascript" src="i-color.min.js"></script>
+  <script src="sizing.js"></script>
   <script src="timer.js"></script>
   <script src="game.js"></script>
   <script src="display.js"></script>

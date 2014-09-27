@@ -9,6 +9,7 @@ Timer = {
 
 	if(Timer.time == 0)
 	{
+	    Display.setTime(Timer.time);
 	    //End the game!
 	}
 	else

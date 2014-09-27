@@ -50,11 +50,11 @@ Display = {
 	}
     },
     setTime: function(time) {
-	// Change the time displayed
-	//console.log(time);
+	var prefix = time.toString().length == 2 ? "0:" : "0:0"
+	document.getElementById("time").innerHTML = prefix+time;
     },
     setLevel: function(level) {
-	// Set the level displayed
+	document.getElementById("level").innerHTML = "L"+level;
     },
     setBoard: function(size, diff) {
 	//Main color
@@ -75,7 +75,7 @@ Display = {
 	tilebase.className = "tile-base";
 	tilebase.style.width = 100/size + "%";
 	tilebase.style.height = 100/size + "%";
-	tilebase.style.padding = 7/size + "%";
+	//tilebase.style.padding = 7/size + "%";
 	
 	var tile = document.createElement("div");
 	tile.className = "tile";

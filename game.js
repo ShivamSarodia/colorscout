@@ -3,7 +3,7 @@ Game = {
     diffs: [90, 60, 60, 50, 50, 45, 40, 30, 25, 20],
     sizes: [2, 4, 4, 6, 6],
     maindiff: 15,
-    mainsize: 8,
+    mainsize: 7,
     init: function() {
 	// Init any setup for Game
 	// Start the timer
