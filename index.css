@@ -60,7 +60,13 @@ body {
     margin: -50px 30px 20px 30px;
     font-size: 18pt;
     color: rgba(27, 87, 124, 1);
- }
+}
+
+#end-screen #end-info-div
+{
+    padding: 10px 15px 10px 15px;
+    margin: 5px 20px 18px 20px;
+}
 
 #start-screen #infhold, #end-screen #end-infhold
 {
@@ -150,11 +156,12 @@ body {
   }
 
   #end-screen #level-span {
-      font-size: 35pt;
+      font-size: 30pt;
   }
  
  #end-screen #end-info-div {
-     font-size: 15pt;
+     font-size: 13pt;
+     margin: 20px;
  }
  
  #end-screen #level-span {
@@ -163,7 +170,7 @@ body {
  }
 
  #end-screen #share-but {
-     margin-top: 12px;
+     margin-top: 6px;
  }
 
  @media (min-width: 481px), (orientation: landscape) {
@@ -241,6 +248,7 @@ body {
 
     .smallbut {
 	font-size: 28pt;
+	padding: 18px 50px;
     }
 
      #start-screen #info-div {
@@ -268,10 +276,22 @@ body {
     }
 
     #end-screen #level-span {
-	font-size: 60pt;
+	font-size: 53pt;
     }
      
     #end-screen #end-info-div {
-	font-size: 35pt;
+	font-size: 18pt;
+    }
+}
+
+@media (orientation: landscape) {
+    #end-screen #play-again-but
+    {
+	margin-right: 20px;
+    }
+
+    #end-screen #strangebr
+    {
+	display: none;
     }
 }

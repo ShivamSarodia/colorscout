@@ -41,7 +41,7 @@ Game = {
 	}
 	else
 	{
-	    Display.endComment("That's darn good! You should tell your friends by hitting the Share button!")
+	    Display.endComment("That's darn good! You should hit the Share button and tell your friends!")
 	}
 	Display.showScreen(2);
 	// Display the ending screen

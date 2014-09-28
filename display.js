@@ -24,10 +24,14 @@ Display = {
 	
 	document.getElementById("start-but").addEventListener("click", Game.init);
 	document.getElementById("board").addEventListener("click", Game.incorrect);
-	// Set up listeners for end of game buttons
+	document.getElementById("share-but").addEventListener("click", Display.share);
+	document.getElementById("play-again-but").addEventListener("click", Game.init);
 
 	// Show start screen
 	this.showScreen(0);
+    },
+    share: function() {
+	window.location = "https://www.facebook.com/sharer/sharer.php?u=http://shivamsarodia.github.com/colors";
     },
     showScreen: function(screen) {
 	switch(screen)

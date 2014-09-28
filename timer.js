@@ -2,7 +2,7 @@ Timer = {
     time: 0,
     start: function() {
 	console.log("Started timer");
-	Timer.time = 10; //CHANGE THIS
+	Timer.time = 60;
 	setTimeout(Timer.tick, 1000);
     },
     tick: function() {
