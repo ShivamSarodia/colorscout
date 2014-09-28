@@ -64,39 +64,47 @@ Display = {
     },
     setBoard: function(size, diff) {
 	//Main color
+	console.log("Debug 1");
 	var rgb = {r: Math.floor(diff + (255-2*diff)*Math.random()),
 		   g: Math.floor(diff + (255-2*diff)*Math.random()),
 		   b: Math.floor(diff + (255-2*diff)*Math.random())};
-	
+
+	console.log("Debug 2");
 	var sign = Math.sign(Math.random()-0.5);
 	var rgb1 = {r: rgb["r"] + sign*diff,
 		    g: rgb["g"] + sign*diff,
 		    b: rgb["b"] + sign*diff};
-	
+
+	console.log("Debug 3");
 	//Diff color
 	var board = document.getElementById("board");
 	board.innerHTML = "";
-	
+
+	console.log("Debug 4");	
 	var tilebase = document.createElement("div");
 	tilebase.className = "tile-base";
 	tilebase.style.width = 100/size + "%";
 	tilebase.style.height = 100/size + "%";
-	//tilebase.style.padding = 7/size + "%";
-	
+
+	console.log("Debug 5");
 	var tile = document.createElement("div");
 	tile.className = "tile";
 	tile.style.backgroundColor = "rgb("+rgb["r"]+","+rgb["g"]+","+rgb["b"]+")";
-	
+
+	console.log("Debug 6");
 	tilebase.appendChild(tile);
-	
+
+	console.log("Debug 7");
 	for(i = 0; i < size*size; i++)
 	{
 	    board.appendChild(tilebase.cloneNode(true));
 	}
 
+	console.log("Debug 8");
 	this.special = Math.floor(board.childNodes.length*Math.random());
 	board.childNodes[this.special].firstChild.addEventListener("click", Game.correct);
 	board.childNodes[this.special].firstChild.style.backgroundColor = "rgb("+rgb1["r"]+","+rgb1["g"]+","+rgb1["b"]+")";
+	console.log("Debug 9");
     },
 
     endLevel: function(lev) {

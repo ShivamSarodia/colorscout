@@ -12,9 +12,7 @@ Game = {
 	Game.level = 1;
 	Timer.start();
 	Display.showScreen(1);
-	console.log("Debug - Step 1");
 	Display.setLevel(Game.level);
-	console.log("Debug - Step 2");
 	Display.setBoard(Game.sizes[0], Game.diffs[0]);
 	console.log("Debug - Step 3");
     },
