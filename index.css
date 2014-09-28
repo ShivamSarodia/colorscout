@@ -31,14 +31,18 @@ body {
     text-shadow: 0px 1px 0px #263666;
 }
 
-#start-screen
+.smallbut {
+    font-size: 18pt;
+}
+
+#start-screen, #end-screen
 {
     text-align: center;
     font-size: 0pt /* needed for centering, don't ask */
     /* Stuff like this is why I hate CSS. */
 }
 
-#start-screen:before
+#start-screen:before, #end-screen:before
 {
     content: '';
     display: inline-block;
@@ -47,7 +51,7 @@ body {
     margin-right: -0.25em;
 }
 
-#start-screen #info-div
+#start-screen #info-div, #end-screen #end-info-div
 {
     background-color: rgba(255,255,255,1.0);
     border-radius: 3px;
@@ -58,7 +62,7 @@ body {
     color: rgba(27, 87, 124, 1);
  }
 
-#start-screen #infhold
+#start-screen #infhold, #end-screen #end-infhold
 {
     display: inline-block;
     vertical-align: middle;
@@ -131,17 +135,35 @@ body {
      border-top: 1.5px solid rgba(41,123,174,1);
      font-weight: 800;
      overflow: hidden;
+     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32)
+  }
+
+  #main #level {
+      width: 48%; /*to do: figure this out*/
+      display: inline-block;
+      border-right: 1.5px solid rgba(41,123,174,1);
+  }
+
+  #main #time {
+      width: 48%; /*to do: figure this out*/
+      display: inline-block;
+  }
+
+  #end-screen #level-span {
+      font-size: 35pt;
+  }
+ 
+ #end-screen #end-info-div {
+     font-size: 15pt;
+ }
+ 
+ #end-screen #level-span {
+     font-size: 40pt;
+     font-weight: 700;
  }
 
- #main #level {
-     width: 48%; /*to do: figure this out*/
-     display: inline-block;
-     border-right: 1.5px solid rgba(41,123,174,1);
- }
-
- #main #time {
-     width: 48%; /*to do: figure this out*/
-     display: inline-block;
+ #end-screen #share-but {
+     margin-top: 12px;
  }
 
  @media (min-width: 481px), (orientation: landscape) {
@@ -175,6 +197,10 @@ body {
 	padding: 16px 45px;
      }
 
+     .smallbut {
+	 font-size: 25pt;
+     }
+
      #start-screen #info-div {
 	 font-size: 25pt;
 	 padding: 25px 40px 25px 40px;
@@ -193,12 +219,28 @@ body {
      #main #board {
 	 top: -50pt;
      }
+
+     #end-screen #share-but {
+	 margin-top: 16px;
+     }
+
+     #end-screen #level-span {
+      font-size: 42pt;
+     }
+     
+     #end-screen #end-info-div {
+	 font-size: 19pt;
+     }
 }
 
 @media (min-width: 1200px) {
     .but {
 	font-size: 35pt;
 	padding: 18px 80px;
+    }
+
+    .smallbut {
+	font-size: 28pt;
     }
 
      #start-screen #info-div {
@@ -219,5 +261,17 @@ body {
 
     #main #board {
 	top: -60pt;
+    }
+
+    #end-screen #share-but {
+	 margin-top: 20px;
+    }
+
+    #end-screen #level-span {
+	font-size: 60pt;
+    }
+     
+    #end-screen #end-info-div {
+	font-size: 35pt;
     }
 }

@@ -1,7 +1,8 @@
 Timer = {
-    time: 60,
+    time: 0,
     start: function() {
 	console.log("Started timer");
+	Timer.time = 10; //CHANGE THIS
 	setTimeout(Timer.tick, 1000);
     },
     tick: function() {
@@ -10,7 +11,7 @@ Timer = {
 	if(Timer.time == 0)
 	{
 	    Display.setTime(Timer.time);
-	    //End the game!
+	    Timer.end();
 	}
 	else
 	{
@@ -19,7 +20,8 @@ Timer = {
 	}
     },
     end: function() {
-	// Game.timeUp()
-	// end the timer
+	Game.timeUp();
+	console.log("Timer: time's up");
+	//Do anything else to end the game
     }
 }

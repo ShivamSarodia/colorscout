@@ -93,6 +93,14 @@ Display = {
 	this.special = Math.floor(board.childNodes.length*Math.random());
 	board.childNodes[this.special].firstChild.addEventListener("click", Game.correct);
 	board.childNodes[this.special].firstChild.style.backgroundColor = "rgb("+rgb1["r"]+","+rgb1["g"]+","+rgb1["b"]+")";
+    },
+
+    endLevel: function(lev) {
+	document.getElementById("level-span").innerHTML = "Level " + lev;
+    },
+
+    endComment: function(comment) {
+	document.getElementById("comment-span").innerHTML = comment;
     }
 }
 
