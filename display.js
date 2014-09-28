@@ -42,7 +42,7 @@ Display = {
 	    document.getElementById("end-screen").className = "page invis";
 	    break;
 	case 1: //Board screen
-	    document.getElementById("level").innerHTML = "L1";
+	    document.getElementById("level").innerHTML = "1";
 	    document.getElementById("time").innerHTML = "1:00";
 	    document.getElementById("start-screen").className = "page invis";
 	    document.getElementById("main").className = "page"
@@ -60,7 +60,7 @@ Display = {
 	document.getElementById("time").innerHTML = prefix+time;
     },
     setLevel: function(level) {
-	document.getElementById("level").innerHTML = "L"+level;
+	document.getElementById("level").innerHTML = level;
     },
     setBoard: function(size, diff) {
 	//Main color
@@ -99,7 +99,7 @@ Display = {
     },
 
     endLevel: function(lev) {
-	document.getElementById("level-span").innerHTML = "Level " + lev;
+	document.getElementById("level-span").innerHTML = lev.toString() + (lev == 1 ? " pt" : " pts");
     },
 
     endComment: function(comment) {

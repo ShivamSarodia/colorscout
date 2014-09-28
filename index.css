@@ -99,6 +99,7 @@ body {
     text-align: center;
     position: absolute;
     bottom: 5px;
+    left: 0px;
 }
 
 #end-screen #inspired
@@ -203,6 +204,16 @@ body {
     margin-top: 6px;
 }
 
+#end-screen #play-again-but
+{
+ margin-right: 0px;
+}
+
+#end-screen #strangebr
+{
+    display: inline;
+}
+
 @media (min-width: 481px), (orientation: landscape) {
     /* Uncompress the board for larger screens */
     #main #board {
@@ -228,7 +239,7 @@ body {
     }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 600px) and (orientation: portrait), (min-width: 800px) and (orientation: landscape) {
     .but {
 	font-size: 28pt;
 	padding: 16px 45px;
