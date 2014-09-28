@@ -32,25 +32,25 @@ Game = {
     },
     timeUp: function() {
 	Display.endLevel( Game.level );
-	if( Game.level < 10 )
+	if( Game.level < 15 )
 	{
-	    Display.endComment("That wasn't too great; check to make sure your eyes were open. Play again?");
+	    Display.endComment("That wasn't too great; check to make sure your eyes are open. Play again?");
 	}
-	else if( Game.level < 20 )
+	else if( Game.level < 25 )
 	{
-	    Display.endComment("Not too bad, though I'm sure you can do better. Play again?");
+	    Display.endComment("Not terrible, though I'm sure you can do better. Play again?");
 	}
-	else if( Game.level < 30 )
+	else if( Game.level < 35 )
 	{
 	    Display.endComment("That's pretty nifty, but I've seen better. Play again?");
 	}
-	else if ( Game.level < 40 )
+	else if ( Game.level < 45 )
 	{
-	    Display.endComment("That's darn good! Click \"Share\" below; can you beat your friends?")
+	    Display.endComment("Not too bad! Click \"Share\" below; can you beat your friends?")
 	}
 	else
 	{
-	    Display.endComment("Awesome! You should be proud! Hit the Share button; brag to your friends.");
+	    Display.endComment("That's darn good! You should be proud! Hit the Share button; brag to your friends.");
 	}
 	Display.showScreen(2);
 	// Display the ending screen

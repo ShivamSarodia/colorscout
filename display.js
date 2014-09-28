@@ -93,11 +93,9 @@ Display = {
 	    board.appendChild(tilebase.cloneNode(true));
 	}
 
-	console.log("Debug 8");
 	this.special = Math.floor(board.childNodes.length*Math.random());
 	board.childNodes[this.special].firstChild.addEventListener("click", Game.correct);
 	board.childNodes[this.special].firstChild.style.backgroundColor = "rgb("+rgb1["r"]+","+rgb1["g"]+","+rgb1["b"]+")";
-	console.log("Debug 9");
     },
 
     endLevel: function(lev) {
