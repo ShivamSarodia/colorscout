@@ -31,7 +31,7 @@ Display = {
 	this.showScreen(0);
     },
     share: function() {
-	window.location = "https://www.facebook.com/sharer/sharer.php?u=http://shivamsarodia.github.com/colors";
+	window.location = "https://www.facebook.com/sharer/sharer.php?u=http://shivamsarodia.github.io/colorscout";
     },
     showScreen: function(screen) {
 	switch(screen)
