@@ -98,13 +98,13 @@ body {
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 5px;
+    bottom: 25px;
     left: 0px;
 }
 
 .inspired
 {
-    font-size: 10pt;
+    font-size: 12pt;
     margin-top: 20px;
     color: rgb(100,100,100) /* CHange the below*/
 }
@@ -270,7 +270,7 @@ body {
     }
 
     .inspired {
-	font-size: 12pt;
+	font-size: 14pt;
     }
     
     #main #info {
@@ -320,7 +320,7 @@ body {
     }
 
     .inspired {
-	font-size: 14pt;
+	font-size: 16pt;
     }
     
     
