@@ -1,4 +1,4 @@
-Colors
+Color Scout
 ======
 
 Play the game: [http://shivamsarodia.github.io/colorscout](http://shivamsarodia.github.io/colorscout)
