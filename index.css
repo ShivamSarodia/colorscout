@@ -93,7 +93,7 @@ body {
     margin-top: -20px;
 }
 
-#but-holder
+.but-holder
 {
     width: 100%;
     text-align: center;
@@ -102,14 +102,14 @@ body {
     left: 0px;
 }
 
-#inspired
+.inspired
 {
     font-size: 10pt;
     margin-top: 20px;
     color: rgb(100,100,100) /* CHange the below*/
 }
 
-#inspired a
+.inspired a
 {
     color: rgba(41,123,174,0.5);
 }
@@ -269,7 +269,7 @@ body {
 	margin-top: -30px;
     }
 
-    #inspired {
+    .inspired {
 	font-size: 12pt;
     }
     
@@ -319,7 +319,7 @@ body {
 	text-shadow: 0px 1px 1px black;
     }
 
-    #inspired {
+    .inspired {
 	font-size: 14pt;
     }
     
